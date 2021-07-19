@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不一样的西游</title>
+    <style>
+        /* 给网页中的标签装饰 CSS 样式（层叠样式表） */
+        /* class（类）选择器 */
+        body {
+            margin: 0;
+            /* background-image: url(images/bg.webp); */
+            background-image: url(https://cdn.jsdelivr.net/gh/zEpoch/imageHome/webStart/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E8%A5%BF%E6%B8%B8%E8%AE%B0/bg.webp);
+        }
+
+        .footer {
+            /* 宽度 */
+            width: 760px;
+            /* 高度 */
+            height: 240px;
+            /* 上下 左右 相等 */
+            margin: 200px auto;
+
+            /* background-color: aquamarine; */
+        }
+
+        .west {
+            float: left;
+            width: 25%;
+            height: 100%;
+            /* background-color: cornflowerblue; */
+            background-repeat: no-repeat;
+            /* 背景位置 y 方向 居中 */
+            background-position-y: center;
+        }
+
+        .west1 {
+            /* background-image: url(images/p1.png); */
+            background-image: url(https://cdn.jsdelivr.net/gh/zEpoch/imageHome/webStart/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E8%A5%BF%E6%B8%B8%E8%AE%B0/p1.png);
+            /* 播放动画 动画名称 */
+            animation: sunwukong 1.4s steps(8) infinite;
+            /* 整个动画走1600px 走8步 每一步是200px 这200px是瞬间到达的*/
+        }
+
+        .west2 {
+            /* background-image: url(images/p2.png); */
+            background-image: url(https://cdn.jsdelivr.net/gh/zEpoch/imageHome/webStart/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E8%A5%BF%E6%B8%B8%E8%AE%B0/p2.png);
+            animation: zhubajie 1.4s steps(8) infinite;
+        }
+
+        .west3 {
+            /* background-image: url(images/p3.png); */
+            background-image: url(https://cdn.jsdelivr.net/gh/zEpoch/imageHome/webStart/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E8%A5%BF%E6%B8%B8%E8%AE%B0/p3.png);
+            animation: tangseng 1.4s steps(8) infinite;
+        }
+
+        .west4 {
+            /* background-image: url(images/p4.png); */
+            background-image: url(https://cdn.jsdelivr.net/gh/zEpoch/imageHome/webStart/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E8%A5%BF%E6%B8%B8%E8%AE%B0/p4.png);
+            animation: shaseng 1.4s steps(8) infinite;
+        }
+
+        /* 关键帧（画面） 动画名称（自定义）*/
+        @keyframes sunwukong {
+
+            /* 动画开始的画面 */
+            0% {
+                background-position-x: 0px;
+            }
+
+            /* 结束 */
+            100% {
+                background-position-x: -1600px;
+            }
+        }
+
+        @keyframes zhubajie {
+
+            /* 动画开始的画面 */
+            0% {
+                background-position-x: 0px;
+            }
+
+            /* 结束 */
+            100% {
+                background-position-x: -1600px;
+            }
+        }
+
+        @keyframes tangseng {
+
+            /* 动画开始的画面 */
+            0% {
+                background-position-x: 0px;
+            }
+
+            /* 结束 */
+            100% {
+                background-position-x: -1360px;
+            }
+        }
+
+        @keyframes shaseng {
+
+            /* 动画开始的画面 */
+            0% {
+                background-position-x: 0px;
+            }
+
+            /* 结束 */
+            100% {
+                background-position-x: -1680px;
+            }
+        }
+
+        /* 
+            CSS3动画 -> 只需关键的画面 开始0px 结束 -1600px
+            传统动画 -> 动画片 动态效果 -> 有很多张静止连续的画面播放
+        */
+    </style>
+</head>
+<!-- 身体/主体标签 内容展示给用户看的区域 -->
+
+<body>
+
+
+    <div class="footer">
+        <div class="west west1"></div>
+        <div class="west west2"></div>
+        <div class="west west3"></div>
+        <div class="west west4"></div>
+    </div>
+</body>
+
+</html>
