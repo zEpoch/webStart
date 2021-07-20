@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彩色楼梯导航</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .content {
+            width: 980px;
+            /* height: 600px; */
+            /* background-color: aquamarine; */
+            margin: 0 auto;
+        }
+
+        .item {
+            width: 980px;
+            height: 300px;
+            border: 3px solid red;
+        }
+
+        .lift {
+            position: fixed;
+            top: 170px;
+            right: 190px;
+            width: 50px;
+            height: 500px;
+            background-color: #229abe;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .lift li {
+            width: 50px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .lift li:hover {
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+        }
+        .content .item1{
+            background-color: rgb(72, 255, 0);
+        }
+        .content .item2{
+            background-color: rgb(0, 255, 200);
+        }
+        .content .item3{
+            background-color: rgb(0, 110, 255);
+        }
+        .content .item4{
+            background-color: rgb(0, 255, 255);
+        }
+        .content .item5{
+            background-color: rgb(225, 0, 255);
+        }
+        .content .item6{
+            background-color: rgb(0, 4, 255);
+        }
+        .content .item7{
+            background-color: rgb(255, 0, 242);
+        }
+        .content .item8{
+            background-color: rgb(217, 255, 0);
+        }
+        .content .item9{
+            background-color: rgb(255, 174, 0);
+        }
+        .content .item10{
+            background-color: rgb(255, 136, 0);
+        }
+        .content .item11{
+            background-color: rgb(0, 255, 128);
+        }
+        .content .item12{
+            background-color: rgb(255, 0, 34);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="item item1">影视</div>
+        <div class="item item2">番剧</div>
+        <div class="item item3">音乐</div>
+        <div class="item item4">鬼畜</div>
+        <div class="item item5">科技</div>
+        <div class="item item6">动漫</div>
+        <div class="item item7">游戏</div>
+        <div class="item item8">广告</div>
+        <div class="item item9">舞蹈</div>
+        <div class="item item10">时尚</div>
+        <div class="item item11">TV</div>
+        <div class="item item12">直播</div>
+    </div>
+    <div class="lift">
+        <ul>
+            <li>影视</li>
+            <li>番剧</li>
+            <li>音乐</li>
+            <li>鬼畜</li>
+            <li>科技</li>
+            <li>动漫</li>
+            <li>游戏</li>
+            <li>广告</li>
+            <li>舞蹈</li>
+            <li>时尚</li>
+            <li>TV</li>
+            <li>直播</li>
+        </ul>
+    </div>
+</body>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+<script>
+    /* 
+        JavaScript 点到哪 就滚到那
+        点击到li导航部分 浏览器滚动条滚动到对应的content部分
+        滚动条滚动的距离
+    */
+    /*
+    $('li') => 页面中所有的li
+    $('li').click() => 点击
+    */
+    $('li').click(function () {
+        var index = $(this).index();
+
+        var h = $('.item').eq(index).offset().top;
+        // alert(h)
+        $('html, body').animate({
+            scrollTop: h + 'px'
+        }) //以动画方式移动
+    })
+</script>
+
+</html>
