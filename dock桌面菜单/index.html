@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCK桌面菜单</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(https://cdn.jsdelivr.net/gh/zEpoch/imageHome/webStart/DOCK%E6%A1%8C%E9%9D%A2%E8%8F%9C%E5%8D%95/bj.jpg);
+            background-repeat: no-repeat;
+            /* 图片随着浏览器宽度进行自适应 */
+            background-size: cover;
+            margin: 0;
+        }
+
+        .box {
+            position: fixed;
+            bottom: 50px;
+            width: 100%;
+            height: 50px;
+            /* background-color: red; */
+        }
+
+        ul {
+            width: 80%;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.5);
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            margin: auto;
+            transition: all 0.2s;
+        }
+
+        li {
+            /* 父元素 默认会监测子元素 高度 设置给我自己 从而使高度概率 解决方法：不改变*/
+            list-style: none;
+            display: inline-block;
+            /*块级元素 转化*/
+            /* height: 50px; */
+        }
+
+        li:hover img {
+            /* 
+                height: 100px;
+                width: 100px; 
+            */
+            transform: scale(2);
+            margin: 0 20px;
+        }
+
+        li:hover+li img {
+            transform: scale(1.5);
+            margin: 0 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- dock 导航栏效果 -->
+    <div class="box">
+        <ul>
+            <li><img src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome/webStart/DOCK%E6%A1%8C%E9%9D%A2%E8%8F%9C%E5%8D%95/2.png"
+                    alt="2"></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome/webStart/DOCK%E6%A1%8C%E9%9D%A2%E8%8F%9C%E5%8D%95/3.png"
+                    alt="3"></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome/webStart/DOCK%E6%A1%8C%E9%9D%A2%E8%8F%9C%E5%8D%95/4.png"
+                    alt="4"></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome/webStart/DOCK%E6%A1%8C%E9%9D%A2%E8%8F%9C%E5%8D%95/5.png"
+                    alt="5"></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome/webStart/DOCK%E6%A1%8C%E9%9D%A2%E8%8F%9C%E5%8D%95/6.png"
+                    alt="6"></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome/webStart/DOCK%E6%A1%8C%E9%9D%A2%E8%8F%9C%E5%8D%95/7.png"
+                    alt="7"></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome/webStart/DOCK%E6%A1%8C%E9%9D%A2%E8%8F%9C%E5%8D%95/8.png"
+                    alt="8"></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/zEpoch/imageHome/webStart/DOCK%E6%A1%8C%E9%9D%A2%E8%8F%9C%E5%8D%95/9.png"
+                    alt="9"></li>
+        </ul>
+    </div>
+    <!-- 
+        写内容 dock 导航栏效果
+        页面背景
+        导航栏效果
+        8 个小盒子 装图片  
+        重复 -> 搜索引擎
+        li 小盒子 无序列表 自带间距
+        宽 高 opacity 会继承
+     -->
+</body>
+
+</html>
