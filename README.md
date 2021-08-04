@@ -4,3 +4,5 @@
 [彩色楼梯导航](https://zepoch.github.io/webStart/%E5%BD%A9%E8%89%B2%E6%A5%BC%E6%A2%AF%E5%AF%BC%E8%88%AA/index.html)
 <br>
 [dock桌面菜单](https://zepoch.github.io/webStart/dock%E6%A1%8C%E9%9D%A2%E8%8F%9C%E5%8D%95/index.html)
+<br>
+[爱心跳动特效](https://zepoch.github.io/webStart/%E7%88%B1%E5%BF%83%E8%B7%B3%E5%8A%A8%E7%89%B9%E6%95%88/index.html)
