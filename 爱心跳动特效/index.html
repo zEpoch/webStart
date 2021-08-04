@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+        body {
+            background-color: black;
+        }
+
+        .heart {
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            animation: heartBeat 0.5s linear infinite;
+        }
+
+        /* 
+            CSS 动画 
+            关键帧
+        */
+
+        @keyframes heartBeat {
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.1);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+
+        /* 
+            心的主体 
+        */
+
+        .left,.right {
+            float: left;
+            width: 100px;
+            height: 160px;
+            background-color: pink;
+            border-radius: 50px 50px 0 0;
+            box-shadow: 0px 0px 20px 0px pink;
+        }
+
+        .left {
+            /* 旋转度数 */
+            transform: translate(29px) rotate(-45deg) ;
+        }
+
+        .right {
+            transform: translate(-29px) rotate(45deg) ;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="heart">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>
