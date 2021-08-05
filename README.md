@@ -6,3 +6,5 @@
 [dock桌面菜单](https://zepoch.github.io/webStart/dock%E6%A1%8C%E9%9D%A2%E8%8F%9C%E5%8D%95/index.html)
 <br>
 [爱心跳动特效](https://zepoch.github.io/webStart/%E7%88%B1%E5%BF%83%E8%B7%B3%E5%8A%A8%E7%89%B9%E6%95%88/index.html)
+<br>
+[3D旋转相册](https://zepoch.github.io/webStart/3D%E6%97%8B%E8%BD%AC%E7%9B%B8%E5%86%8C/index.html)
