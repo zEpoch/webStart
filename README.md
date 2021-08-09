@@ -8,3 +8,5 @@
 [爱心跳动特效](https://zepoch.github.io/webStart/%E7%88%B1%E5%BF%83%E8%B7%B3%E5%8A%A8%E7%89%B9%E6%95%88/index.html)
 <br>
 [3D旋转相册](https://zepoch.github.io/webStart/3D%E6%97%8B%E8%BD%AC%E7%9B%B8%E5%86%8C/index.html)
+<br>
+[小米产品模块](https://zepoch.github.io/webStart/%E5%B0%8F%E7%B1%B3%E4%BA%A7%E5%93%81%E6%A8%A1%E5%9D%97/index.html)
